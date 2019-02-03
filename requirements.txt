@@ -2,3 +2,5 @@ flask
 gunicorn
 flask-wtf
 flask-sqlalchemy
+flask-bcrypt
+flask-login
