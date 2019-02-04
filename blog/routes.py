@@ -100,3 +100,7 @@ def account():
         return redirect(url_for('account'))#to avoid the post get redirect pattern
     image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
     return render_template('account.html', title='Account', image_file=image_file, form=form)
+
+@app.route('/snippet')
+def snippet():
+    return render_template('materialize.html')
